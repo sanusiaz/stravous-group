@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en-NG" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stravous Group | Construction and Real Estate in Nigeria</title>
+<meta name="description" content="Stravous Group is a Nigerian construction and real estate group, home to Stravous Construction and Stravous Real Estate. Building across 36 states since 2013.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://stravousgroup.com/">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F7F7F5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E192B" media="(prefers-color-scheme: dark)">
+
+<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stravous Group">
+<meta property="og:locale" content="en_NG">
+<meta property="og:url" content="https://stravousgroup.com/">
+<meta property="og:title" content="Stravous Group | Construction and Real Estate in Nigeria">
+<meta property="og:description" content="Stravous Group is a Nigerian construction and real estate group, home to Stravous Construction and Stravous Real Estate. Building across 36 states since 2013.">
+<meta property="og:image" content="https://stravousgroup.com/assets/brand/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Stravous logo over the Lagos skyline">
+
+<!-- X / Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Stravous Group | Construction and Real Estate in Nigeria">
+<meta name="twitter:description" content="Stravous Group is a Nigerian construction and real estate group, home to Stravous Construction and Stravous Real Estate. Building across 36 states since 2013.">
+<meta name="twitter:image" content="https://stravousgroup.com/assets/brand/og-image.jpg">
+<meta name="twitter:image:alt" content="Stravous logo over the Lagos skyline">
+
+<!-- Icons -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<!-- Structured data for Google -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://stravousgroup.com/#organization",
+      "name": "Stravous Group",
+      "url": "https://stravousgroup.com/",
+      "logo": "https://stravousgroup.com/assets/brand/logo-full.png",
+      "image": "https://stravousgroup.com/assets/brand/og-image.jpg",
+      "description": "Stravous Group is a Nigerian construction and real estate group, home to Stravous Construction and Stravous Real Estate. Building across 36 states since 2013.",
+      "email": "info@stravousgroup.com",
+      "foundingDate": "2013",
+      "areaServed": { "@type": "Country", "name": "Nigeria" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Abuja",
+        "addressRegion": "FCT",
+        "addressCountry": "NG"
+      },
+      "subOrganization": [
+        { "@type": "Organization", "name": "Stravous Construction", "url": "https://stravousconstruction.com/" },
+        { "@type": "Organization", "name": "Stravous Real Estate", "url": "https://stravousrealestate.com/" }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://stravousgroup.com/#website",
+      "url": "https://stravousgroup.com/",
+      "name": "Stravous Group",
+      "publisher": { "@id": "https://stravousgroup.com/#organization" },
+      "inLanguage": "en-NG"
+    }
+  ]
+}
+</script>
+
+<!-- Theme: follow the device setting unless the visitor has chosen one -->
+<script>
+(function(){
+  var t=null; try{ t=localStorage.getItem('theme'); }catch(e){}
+  if(t!=='light'&&t!=='dark') t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+})();
+</script>
+<link rel="preload" as="image" type="image/webp" imagesrcset="assets/images/web/hero_banner-800.webp 800w, assets/images/web/hero_banner-1600.webp 1600w" imagesizes="100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --navy:#12213A;
+  --navy-deep:#0C1729;
+  --brass:#A8864E;
+  --brass-light:#C9AE7C;
+  --limestone:#E9E8E4;
+  --paper:#F7F7F5;
+  --graphite:#1C1F24;
+  --concrete:#6E7178;
+  --rule:rgba(28,31,36,.14);
+  --rule-dark:rgba(233,232,228,.16);
+
+  /* surfaces that change with the theme */
+  --bg:var(--paper);
+  --bg-alt:var(--limestone);
+  --text:var(--graphite);
+  --muted:#5F636A;
+  --heading:var(--navy);
+  --line:var(--rule);
+  --line-strong:var(--navy);
+  --sec-navy:var(--navy);
+  --sec-dark:var(--navy-deep);
+
+  --display:"Marcellus", "Times New Roman", serif;
+  --body:"Schibsted Grotesk", system-ui, sans-serif;
+
+  --wrap:1240px;
+  --gut:clamp(20px,4vw,48px);
+}
+[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E192B;
+  --bg-alt:#122036;
+  --text:#E4E3DF;
+  --muted:#A2A7B0;
+  --heading:#EFEDE8;
+  --line:rgba(233,232,228,.13);
+  --line-strong:rgba(201,174,124,.6);
+  --sec-navy:#17284A;
+  --sec-dark:#080F1C;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--text);background:var(--bg);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gut)}
+
+/* type scale (ratio ~1.333) */
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;line-height:1.08}
+h1{font-size:clamp(44px,7.4vw,104px)}
+h2{font-size:clamp(34px,4.4vw,58px)}
+h3{font-size:clamp(22px,2vw,28px);line-height:1.2}
+.lede{font-size:clamp(18px,1.5vw,21px);line-height:1.6;max-width:36em}
+p{max-width:38em}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;font:500 15px/1 var(--body);letter-spacing:.02em;text-decoration:none;padding:17px 28px;border:1px solid currentColor;transition:background .25s,color .25s,border-color .25s}
+.btn-brass{background:var(--brass);border-color:var(--brass);color:var(--navy-deep)}
+.btn-brass:hover{background:var(--brass-light);border-color:var(--brass-light)}
+.btn-line{color:var(--limestone);border-color:rgba(233,232,228,.45)}
+.btn-line:hover{border-color:var(--limestone);background:rgba(233,232,228,.06)}
+.btn-ink{color:var(--navy);border-color:var(--navy)}
+.btn-ink:hover{background:var(--navy);color:var(--paper)}
+
+/* image fallback for missing photos */
+.ph{position:relative;overflow:hidden;background:
+  linear-gradient(135deg,#1a2c48 0%,#12213A 60%,#0C1729 100%)}
+.ph picture{display:contents}
+.ph img{width:100%;height:100%;object-fit:cover}
+.ph.missing img{display:none}
+.ph.missing::after{content:attr(data-file);position:absolute;left:16px;bottom:14px;font:400 12px/1 var(--body);color:rgba(233,232,228,.42);letter-spacing:.02em}
+.ph.missing::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(90deg,transparent 0 79px,rgba(201,174,124,.07) 79px 80px),
+  repeating-linear-gradient(0deg,transparent 0 79px,rgba(201,174,124,.07) 79px 80px)}
+
+/* ---------- header ---------- */
+.site-head{position:absolute;top:0;left:0;right:0;z-index:20;color:var(--limestone)}
+.site-head .wrap{display:flex;align-items:center;justify-content:space-between;height:112px}
+.mark{display:flex;align-items:center;text-decoration:none}
+.mark img{height:82px;width:auto}
+.site-foot .mark img{height:96px}
+.head-actions{display:flex;align-items:center;gap:22px}
+.theme-btn{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:none;border:1px solid rgba(233,232,228,.3);color:var(--limestone);cursor:pointer;transition:border-color .2s}
+.theme-btn:hover{border-color:var(--brass-light)}
+.theme-btn svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5}
+.theme-btn .moon{display:none}
+[data-theme="dark"] .theme-btn .sun{display:none}
+[data-theme="dark"] .theme-btn .moon{display:block}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.mark svg{width:34px;height:34px}
+.mark span{font-family:var(--display);font-size:22px;letter-spacing:.14em}
+.mark small{display:block;font:500 11px/1 var(--body);letter-spacing:.32em;color:var(--brass-light);margin-top:5px}
+.nav{display:flex;gap:36px;align-items:center;margin-left:auto;margin-right:28px}
+.nav a{text-decoration:none;font-size:15px;opacity:.82;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.nav .btn{opacity:1;padding:13px 22px}
+.menu-btn{display:none;background:none;border:0;color:inherit;font:500 15px var(--body);cursor:pointer;padding:8px 0}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:var(--limestone);background:var(--navy-deep);overflow:hidden}
+.hero .ph{position:absolute;inset:0}
+.hero .ph img{transform:scale(1.08);transition:transform 2.6s cubic-bezier(.2,.7,.2,1)}
+.hero.ready .ph img{transform:scale(1)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,23,41,.55) 0%,rgba(12,23,41,.25) 38%,rgba(12,23,41,.92) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(48px,8vh,96px)}
+.hero h1{max-width:11ch}
+.hero h1 .line{display:block;overflow:hidden}
+.hero h1 .line span{display:block;transform:translateY(105%);transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.hero.ready h1 .line span{transform:none}
+.hero.ready h1 .line:nth-child(2) span{transition-delay:.12s}
+.hero.ready h1 .line:nth-child(3) span{transition-delay:.24s}
+.hero-foot{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-top:44px;padding-top:30px;border-top:1px solid var(--rule-dark);opacity:0;transition:opacity 1s .7s}
+.hero.ready .hero-foot{opacity:1}
+.hero-foot p{font-size:18px;color:rgba(233,232,228,.82);max-width:30em}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ---------- facts strip ---------- */
+.facts{background:var(--sec-navy);color:var(--limestone)}
+.facts .wrap{display:grid;grid-template-columns:repeat(3,1fr)}
+.fact{padding:34px 0;border-left:1px solid var(--rule-dark);padding-left:32px}
+.fact:first-child{border-left:0;padding-left:0}
+.fact b{display:block;font:400 34px/1 var(--display);color:var(--brass-light);margin-bottom:8px}
+.fact span{font-size:15px;color:rgba(233,232,228,.7)}
+
+/* ---------- section scaffolding ---------- */
+section{padding:clamp(88px,11vw,150px) 0}
+.head{display:grid;grid-template-columns:5fr 6fr;gap:var(--gut);align-items:end;margin-bottom:clamp(48px,6vw,80px)}
+.head p{color:var(--muted)}
+
+/* ---------- companies ---------- */
+.companies{background:var(--bg)}
+.co-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--line)}
+.co{position:relative;display:flex;flex-direction:column;min-height:620px;color:var(--limestone);text-decoration:none;overflow:hidden;background:var(--navy)}
+.co .ph{position:absolute;inset:0}
+.co .ph img{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.co:hover .ph img{transform:scale(1.04)}
+.co::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,23,41,.15) 20%,rgba(12,23,41,.94) 100%)}
+.co-body{position:relative;z-index:2;margin-top:auto;padding:clamp(28px,4vw,52px)}
+.co-body h3{font-size:clamp(30px,3vw,42px);margin-bottom:16px}
+.co-body p{color:rgba(233,232,228,.8);margin-bottom:28px;max-width:28em}
+.co-link{display:inline-block;font-weight:500;font-size:15px;padding-bottom:6px;border-bottom:1px solid var(--brass)}
+.co:hover .co-link{color:var(--brass-light)}
+
+/* ---------- story ---------- */
+.story{background:var(--bg-alt)}
+.story-grid{display:grid;grid-template-columns:6fr 5fr;gap:clamp(40px,7vw,110px);align-items:center}
+.story .ph{aspect-ratio:4/5}
+.story h2{margin-bottom:30px}
+.story p+p{margin-top:18px}
+.mission{margin-top:40px;padding:30px 0 0;border-top:1px solid var(--line)}
+.mission q{display:block;font:400 clamp(22px,2.2vw,28px)/1.35 var(--display);color:var(--heading);quotes:none}
+.mission span{display:block;margin-top:14px;font-size:14px;color:var(--muted)}
+
+/* ---------- values ---------- */
+.values{background:var(--sec-dark);color:var(--limestone);padding:clamp(70px,8vw,110px) 0}
+.values-grid{display:grid;grid-template-columns:4fr 7fr;gap:var(--gut);align-items:start}
+.values h2{font-size:clamp(30px,3.4vw,44px)}
+.values ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--rule-dark)}
+.values li{font:400 clamp(20px,1.8vw,25px)/1.2 var(--display);padding:26px 0;border-bottom:1px solid var(--rule-dark);display:flex;align-items:center;gap:18px}
+.values li:nth-child(odd){padding-right:24px}
+.values li::before{content:"";width:9px;height:9px;flex:none;border:1px solid var(--brass);transform:rotate(45deg)}
+
+/* ---------- services ---------- */
+.services{background:var(--bg)}
+.svc-list{display:grid;grid-template-columns:1fr 1fr;column-gap:clamp(40px,6vw,96px);border-top:1px solid var(--line-strong)}
+.svc{padding:36px 0 40px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:44px 1fr;gap:6px 20px}
+.svc svg{width:30px;height:30px;stroke:var(--brass);fill:none;stroke-width:1.25;grid-row:span 2;margin-top:2px}
+.svc h3{color:var(--heading)}
+.svc p{color:var(--muted);font-size:16px}
+
+/* ---------- projects ---------- */
+.projects{background:var(--bg-alt)}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:clamp(150px,15vw,210px);gap:14px}
+.proj{position:relative;margin:0;cursor:pointer;background:none;border:0;padding:0;text-align:left;color:var(--limestone);font:inherit}
+.proj .ph{position:absolute;inset:0}
+.proj .ph img{transition:transform 1s cubic-bezier(.2,.7,.2,1)}
+.proj:hover .ph img,.proj:focus-visible .ph img{transform:scale(1.04)}
+.proj figcaption{position:absolute;left:0;right:0;bottom:0;padding:48px 22px 20px;background:linear-gradient(180deg,transparent,rgba(12,23,41,.88));z-index:2}
+.proj b{display:block;font:400 21px/1.2 var(--display)}
+.proj small{display:block;margin-top:6px;font-size:13.5px;color:var(--brass-light)}
+.p1{grid-column:1/8;grid-row:span 3}
+.p2{grid-column:8/13;grid-row:span 2}
+.p3{grid-column:8/13;grid-row:span 1}
+.p4{grid-column:1/5;grid-row:span 2}
+.p5{grid-column:5/9;grid-row:span 2}
+.p6{grid-column:9/13;grid-row:span 2}
+.p7{grid-column:1/7;grid-row:span 2}
+.p8{grid-column:7/13;grid-row:span 2}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,15,27,.94);display:none;align-items:center;justify-content:center;padding:5vw}
+.lb.open{display:flex}
+.lb-inner{width:min(1100px,100%);color:var(--limestone)}
+.lb .ph{aspect-ratio:3/2;width:100%}
+.lb .ph img{object-fit:contain;background:#08101c}
+.lb-cap{display:flex;justify-content:space-between;align-items:baseline;gap:20px;margin-top:18px}
+.lb-cap b{font:400 26px var(--display)}
+.lb-cap span{color:var(--brass-light);font-size:15px}
+.lb-ctrl{display:flex;gap:10px}
+.lb button{background:none;border:1px solid var(--rule-dark);color:var(--limestone);font:500 14px var(--body);padding:11px 18px;cursor:pointer}
+.lb button:hover{border-color:var(--brass)}
+[data-theme="dark"] .btn-brass{color:#0C1729}
+
+/* ---------- testimonials ---------- */
+.words{background:var(--bg)}
+.words-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(28px,4vw,56px)}
+.word{padding-top:30px;border-top:1px solid var(--line-strong)}
+.word blockquote{font:400 21px/1.45 var(--display);color:var(--heading);margin-bottom:28px}
+.word cite{font-style:normal;display:block;font-weight:600;font-size:15px}
+.word cite span{display:block;font-weight:400;color:var(--muted);margin-top:2px}
+
+/* ---------- contact ---------- */
+.contact{background:var(--sec-navy);color:var(--limestone)}
+.contact-grid{display:grid;grid-template-columns:5fr 6fr;gap:clamp(40px,7vw,110px)}
+.contact h2{margin-bottom:24px}
+.contact .lede{color:rgba(233,232,228,.78)}
+.details{margin-top:52px;display:grid;gap:26px}
+.details div{border-top:1px solid var(--rule-dark);padding-top:18px}
+.details dt{font-size:13.5px;color:var(--brass-light);margin-bottom:4px}
+.details dd{font:400 22px/1.3 var(--display)}
+.details dd a{text-decoration:none}
+.details dd a:hover{color:var(--brass-light)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:26px 24px;align-content:start}
+.field{display:flex;flex-direction:column;gap:9px}
+.field.full{grid-column:1/-1}
+label{font-size:14px;color:rgba(233,232,228,.75)}
+input,select,textarea{font:400 17px var(--body);color:var(--limestone);background:transparent;border:0;border-bottom:1px solid rgba(233,232,228,.3);padding:10px 0 12px;border-radius:0;transition:border-color .2s}
+select{appearance:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9AE7C' fill='none' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat right 4px center}
+select option{color:var(--graphite)}
+textarea{min-height:130px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:0;border-bottom-color:var(--brass)}
+.form-foot{grid-column:1/-1;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:8px}
+.form-note{font-size:14.5px;color:var(--brass-light)}
+.hidden{display:none}
+
+/* ---------- footer ---------- */
+.site-foot{background:var(--sec-dark);color:rgba(233,232,228,.72);padding:72px 0 36px;font-size:15px}
+.foot-top{display:grid;grid-template-columns:5fr 3fr 3fr;gap:var(--gut);padding-bottom:56px;border-bottom:1px solid var(--rule-dark)}
+.foot-top .mark{color:var(--limestone);margin-bottom:22px}
+.foot-top p{max-width:26em}
+.foot-top h4{font:500 14px var(--body);color:var(--brass-light);margin-bottom:16px}
+.foot-top ul{list-style:none;display:grid;gap:10px}
+.foot-top a{text-decoration:none}
+.foot-top a:hover{color:var(--limestone)}
+.foot-bot{display:flex;justify-content:space-between;padding-top:28px;font-size:14px;gap:20px;flex-wrap:wrap}
+
+/* ---------- responsive ---------- */
+@media (max-width:1000px){
+  .head,.story-grid,.values-grid,.contact-grid{grid-template-columns:1fr}
+  .co-grid{grid-template-columns:1fr}
+  .co{min-height:520px}
+  .words-grid{grid-template-columns:1fr}
+  .foot-top{grid-template-columns:1fr 1fr}
+  .foot-top>div:first-child{grid-column:1/-1}
+  .story .ph{aspect-ratio:4/3}
+}
+@media (max-width:820px){
+  .nav{margin:0;position:fixed;inset:0;background:var(--navy-deep);flex-direction:column;justify-content:center;gap:28px;font-size:22px;transform:translateY(-100%);transition:transform .45s cubic-bezier(.2,.7,.2,1)}
+  .nav a{font-size:24px;font-family:var(--display)}
+  .nav.open{transform:none}
+  .menu-btn{display:block;position:relative;z-index:30}
+  .theme-btn{position:relative;z-index:30}
+  .mark img{height:64px}
+  .svc-list{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .gallery .proj{grid-column:auto;grid-row:span 1}
+  .gallery .p1{grid-column:1/-1;grid-row:span 2}
+  .hero-foot{grid-template-columns:1fr}
+  .facts .wrap{grid-template-columns:1fr}
+  .fact{border-left:0;padding-left:0;border-top:1px solid var(--rule-dark);padding:24px 0}
+  .fact:first-child{border-top:0}
+}
+@media (max-width:560px){
+  .values ul{grid-template-columns:1fr}
+  .values li:nth-child(odd){padding-right:0}
+  form{grid-template-columns:1fr}
+  .gallery{grid-template-columns:1fr}
+  .gallery .p1{grid-row:span 1}
+  .foot-top{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+  .hero h1 .line span{transform:none}
+  .hero-foot{opacity:1}
+  .hero .ph img{transform:none}
+}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Stravous Group home">
+      <picture><source type="image/webp" srcset="assets/brand/logo-480.webp"><img src="assets/brand/logo-480.png" alt="Stravous" width="480" height="244"></picture>
+    </a>
+    <nav class="nav" id="nav" aria-label="Main">
+      <a href="#companies">Companies</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a class="btn btn-line" href="#contact">Get in touch</a>
+    </nav>
+    <div class="head-actions">
+      <button class="theme-btn" type="button" id="theme-btn" aria-label="Switch to dark mode">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>
+      </button>
+      <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" aria-label="Introduction" style="padding:0">
+  <div class="ph" data-file="hero_banner.png"><picture><source type="image/webp" srcset="assets/images/web/hero_banner-800.webp 800w, assets/images/web/hero_banner-1600.webp 1600w" sizes="100vw"><img src="assets/images/web/hero_banner-1600.jpg" srcset="assets/images/web/hero_banner-800.jpg 800w, assets/images/web/hero_banner-1600.jpg 1600w" sizes="100vw" data-full="assets/images/web/hero_banner-1600.webp" alt="City skyline with construction cranes at sunset" fetchpriority="high" decoding="async"></picture></div>
+  <div class="wrap hero-inner">
+    <h1><span class="line"><span>We build</span></span><span class="line"><span>the future</span></span><span class="line"><span>of Nigeria.</span></span></h1>
+    <div class="hero-foot">
+      <p>A Nigerian construction and real estate group, delivering residential, commercial and land development projects across all 36 states.</p>
+      <div class="hero-actions">
+        <a class="btn btn-brass" href="#services">Our services</a>
+        <a class="btn btn-line" href="#about">Our story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="facts" aria-label="Key facts">
+  <div class="wrap">
+    <div class="fact"><b>Since 2013</b><span>Building with quality and integrity</span></div>
+    <div class="fact"><b>36 states</b><span>Projects across Nigeria</span></div>
+    <div class="fact"><b>Two companies</b><span>Construction and real estate</span></div>
+  </div>
+</div>
+
+<section class="companies" id="companies">
+  <div class="wrap">
+    <div class="head">
+      <h2>Our companies</h2>
+      <p class="lede">Two companies, one vision: a better built environment for Nigeria.</p>
+    </div>
+  </div>
+  <div class="co-grid">
+    <a class="co" href="https://stravousconstruction.com/">
+      <div class="ph" data-file="IMG_0789.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0789-800.webp 800w, assets/images/web/IMG_0789-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw"><img src="assets/images/web/IMG_0789-1600.jpg" srcset="assets/images/web/IMG_0789-800.jpg 800w, assets/images/web/IMG_0789-1600.jpg 1600w" sizes="(max-width:1000px) 100vw, 50vw" data-full="assets/images/web/IMG_0789-1600.webp" alt="Stravous Construction" loading="lazy" decoding="async"></picture></div>
+      <div class="co-body">
+        <h3>Stravous Construction</h3>
+        <p>A trusted construction partner delivering premium residential and commercial projects, built on quality and professional expertise.</p>
+        <span class="co-link">Explore Stravous Construction</span>
+      </div>
+    </a>
+    <a class="co" href="https://stravousrealestate.com/">
+      <div class="ph" data-file="real_estate_dev.png"><picture><source type="image/webp" srcset="assets/images/web/real_estate_dev-800.webp 800w, assets/images/web/real_estate_dev-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 50vw"><img src="assets/images/web/real_estate_dev-1600.jpg" srcset="assets/images/web/real_estate_dev-800.jpg 800w, assets/images/web/real_estate_dev-1600.jpg 1600w" sizes="(max-width:1000px) 100vw, 50vw" data-full="assets/images/web/real_estate_dev-1600.webp" alt="Stravous Real Estate" loading="lazy" decoding="async"></picture></div>
+      <div class="co-body">
+        <h3>Stravous Real Estate</h3>
+        <p>Property development and a marketplace connecting buyers, investors and developers with verified premium properties in Nigeria's major markets.</p>
+        <span class="co-link">Explore Stravous Real Estate</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="story" id="about">
+  <div class="wrap story-grid">
+    <div class="ph" data-file="team_photo.png"><picture><source type="image/webp" srcset="assets/images/web/team_photo-800.webp 800w, assets/images/web/team_photo-1600.webp 1600w" sizes="(max-width:1000px) 100vw, 45vw"><img src="assets/images/web/team_photo-1600.jpg" srcset="assets/images/web/team_photo-800.jpg 800w, assets/images/web/team_photo-1600.jpg 1600w" sizes="(max-width:1000px) 100vw, 45vw" data-full="assets/images/web/team_photo-1600.webp" alt="The Stravous Group team" loading="lazy" decoding="async"></picture></div>
+    <div>
+      <h2>A legacy of building excellence</h2>
+      <p class="lede">Stravous Group is a diversified Nigerian group focused on construction and real estate.</p>
+      <p>For over a decade we have delivered landmark projects and earned the trust of clients across all 36 states, from family homes and gated estates to office complexes and land development.</p>
+      <div class="mission">
+        <q>To build structures that inspire, communities that thrive, and investments that endure.</q>
+        <span>Our mission</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="values" aria-labelledby="values-h">
+  <div class="wrap values-grid">
+    <h2 id="values-h">What we stand on</h2>
+    <ul>
+      <li>Licensed and certified</li>
+      <li>On-time delivery</li>
+      <li>Safety first</li>
+      <li>Premium materials</li>
+      <li>Sustainable methods</li>
+      <li>Client partnership</li>
+    </ul>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head">
+      <h2>What we do</h2>
+      <p class="lede">From raw land to finished keys, across both of our companies.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 28V14L16 5l12 9v14"/><path d="M12 28v-9h8v9"/></svg>
+        <h3>Residential construction</h3>
+        <p>Luxury homes, duplexes and gated estates, built with premium materials and skilled craftsmanship.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="4" width="14" height="24"/><path d="M19 12h8v16h-8M9 9h2M13 9h2M9 14h2M13 14h2M9 19h2M13 19h2"/></svg>
+        <h3>Commercial projects</h3>
+        <p>Office complexes, retail spaces and mixed-use developments designed for function and visual appeal.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 24l8-6 6 4 12-10"/><path d="M3 28h26"/></svg>
+        <h3>Land development</h3>
+        <p>Site preparation, grading, drainage and infrastructure that make raw land ready to build on.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="3" y="3" width="26" height="26"/><path d="M3 16h26M16 3v26"/><path d="M8 11l2.5-2 2.5 2v3H8zM19 11l2.5-2 2.5 2v3h-5zM8 24l2.5-2 2.5 2v3H8z"/></svg>
+        <h3>Estate development</h3>
+        <p>Master-planned communities with modern amenities, security infrastructure and premium finishes.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="16" r="5"/><path d="M16 16h13M24 16v5M28 16v4"/></svg>
+        <h3>Property sales and leasing</h3>
+        <p>Connecting buyers, sellers and tenants with verified premium properties.</p>
+      </div>
+      <div class="svc">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="6" y="5" width="20" height="23"/><path d="M12 5V3h8v2M11 13l2 2 4-4M11 21l2 2 4-4M20 13h2M20 21h2"/></svg>
+        <h3>Project management</h3>
+        <p>End-to-end oversight for on-time, on-budget delivery to a high standard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="head">
+      <h2>Featured projects</h2>
+      <p class="lede">A selection of recent work, from foundation to finish.</p>
+    </div>
+    <div class="gallery">
+      <button class="proj p1" data-i="0"><div class="ph" data-file="IMG_0790.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0790-800.webp 800w, assets/images/web/IMG_0790-1600.webp 1600w" sizes="(max-width:560px) 100vw, 60vw"><img src="assets/images/web/IMG_0790-1600.jpg" srcset="assets/images/web/IMG_0790-800.jpg 800w, assets/images/web/IMG_0790-1600.jpg 1600w" sizes="(max-width:560px) 100vw, 60vw" data-full="assets/images/web/IMG_0790-1600.webp" alt="Luxury Residential Estate, Abuja, FCT" loading="lazy" decoding="async"></picture></div><figcaption><b>Luxury Residential Estate</b><small>Abuja, FCT</small></figcaption></button>
+      <button class="proj p2" data-i="1"><div class="ph" data-file="IMG_0704.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0704-800.webp 800w, assets/images/web/IMG_0704-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0704-1600.jpg" srcset="assets/images/web/IMG_0704-800.jpg 800w, assets/images/web/IMG_0704-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0704-1600.webp" alt="Premium Residential Build, Construction" loading="lazy" decoding="async"></picture></div><figcaption><b>Premium Residential Build</b><small>Construction</small></figcaption></button>
+      <button class="proj p3" data-i="2"><div class="ph" data-file="IMG_0784.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0784-800.webp 800w, assets/images/web/IMG_0784-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0784-1600.jpg" srcset="assets/images/web/IMG_0784-800.jpg 800w, assets/images/web/IMG_0784-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0784-1600.webp" alt="Commercial Complex, Mixed-use" loading="lazy" decoding="async"></picture></div><figcaption><b>Commercial Complex</b><small>Mixed-use</small></figcaption></button>
+      <button class="proj p4" data-i="3"><div class="ph" data-file="IMG_0759.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0759-800.webp 800w, assets/images/web/IMG_0759-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0759-1600.jpg" srcset="assets/images/web/IMG_0759-800.jpg 800w, assets/images/web/IMG_0759-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0759-1600.webp" alt="Infrastructure Development, Land development" loading="lazy" decoding="async"></picture></div><figcaption><b>Infrastructure Development</b><small>Land development</small></figcaption></button>
+      <button class="proj p5" data-i="4"><div class="ph" data-file="IMG_0733.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0733-800.webp 800w, assets/images/web/IMG_0733-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0733-1600.jpg" srcset="assets/images/web/IMG_0733-800.jpg 800w, assets/images/web/IMG_0733-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0733-1600.webp" alt="Structural Engineering, Foundation phase" loading="lazy" decoding="async"></picture></div><figcaption><b>Structural Engineering</b><small>Foundation phase</small></figcaption></button>
+      <button class="proj p6" data-i="5"><div class="ph" data-file="IMG_0795.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0795-800.webp 800w, assets/images/web/IMG_0795-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0795-1600.jpg" srcset="assets/images/web/IMG_0795-800.jpg 800w, assets/images/web/IMG_0795-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0795-1600.webp" alt="Premium Villa Project, Residential" loading="lazy" decoding="async"></picture></div><figcaption><b>Premium Villa Project</b><small>Residential</small></figcaption></button>
+      <button class="proj p7" data-i="6"><div class="ph" data-file="IMG_0770.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0770-800.webp 800w, assets/images/web/IMG_0770-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0770-1600.jpg" srcset="assets/images/web/IMG_0770-800.jpg 800w, assets/images/web/IMG_0770-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0770-1600.webp" alt="Mixed-Use Development, Commercial" loading="lazy" decoding="async"></picture></div><figcaption><b>Mixed-Use Development</b><small>Commercial</small></figcaption></button>
+      <button class="proj p8" data-i="7"><div class="ph" data-file="IMG_0712.JPG"><picture><source type="image/webp" srcset="assets/images/web/IMG_0712-800.webp 800w, assets/images/web/IMG_0712-1600.webp 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw"><img src="assets/images/web/IMG_0712-1600.jpg" srcset="assets/images/web/IMG_0712-800.jpg 800w, assets/images/web/IMG_0712-1600.jpg 1600w" sizes="(max-width:560px) 100vw, (max-width:820px) 50vw, 40vw" data-full="assets/images/web/IMG_0712-1600.webp" alt="Precision Site Survey, Planning phase" loading="lazy" decoding="async"></picture></div><figcaption><b>Precision Site Survey</b><small>Planning phase</small></figcaption></button>
+    </div>
+  </div>
+</section>
+
+<section class="words" aria-labelledby="words-h">
+  <div class="wrap">
+    <div class="head">
+      <h2 id="words-h">From our clients</h2>
+    </div>
+    <div class="words-grid">
+      <!-- Replace each quote with the client's exact wording from the current site -->
+      <figure class="word">
+        <blockquote>The quality of our family estate is outstanding. Every detail exceeded our expectations.</blockquote>
+        <cite>Adebayo Okonkwo<span>Property owner, Abuja</span></cite>
+      </figure>
+      <figure class="word">
+        <blockquote>The real estate team made acquiring our commercial land smooth, with real transparency and efficiency.</blockquote>
+        <cite>Fatima Shehu<span>Investor, Lagos</span></cite>
+      </figure>
+      <figure class="word">
+        <blockquote>Our office complex was delivered on time, on budget and to a high standard. Stravous is our go-to partner.</blockquote>
+        <cite>Chisom Ihejirika<span>CEO, Port Harcourt</span></cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <h2>Ready to build with us?</h2>
+      <p class="lede">Tell us about your construction or real estate project and our team will get back to you.</p>
+      <dl class="details">
+        <div><dt>Email</dt><dd><a href="mailto:info@stravousgroup.com">info@stravousgroup.com</a></dd></div>
+        <div><dt>Phone</dt><dd><a href="tel:+2348000000000">+234 800 000 0000</a></dd></div>
+        <div><dt>Office</dt><dd>Abuja, FCT, Nigeria</dd></div>
+      </dl>
+    </div>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="company_site" id="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <p class="hidden"><label>Leave blank <input name="company_site"></label></p>
+      <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" autocomplete="name" required></div>
+      <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+      <div class="field full"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field full"><label for="f-topic">What do you need?</label>
+        <select id="f-topic" name="topic">
+          <option>Construction</option>
+          <option>Real estate</option>
+          <option>Land development</option>
+          <option>Project management</option>
+          <option>Something else</option>
+        </select>
+      </div>
+      <div class="field full"><label for="f-msg">About your project</label><textarea id="f-msg" name="message" required></textarea></div>
+      <div class="form-foot">
+        <button class="btn btn-brass" type="submit">Send enquiry</button>
+        <span class="form-note" id="form-note" role="status"></span>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a class="mark" href="#top" aria-label="Stravous Group home">
+          <picture><source type="image/webp" srcset="assets/brand/logo-480.webp"><img loading="lazy" src="assets/brand/logo-480.png" alt="Stravous" width="480" height="244"></picture>
+        </a>
+        <p>A Nigerian construction and real estate group, building with quality, integrity and excellence since 2013.</p>
+      </div>
+      <div>
+        <h4>Companies</h4>
+        <ul>
+          <li><a href="https://stravousconstruction.com/">Stravous Construction</a></li>
+          <li><a href="https://stravousrealestate.com/">Stravous Real Estate</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Group</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© <span id="yr">2025</span> Stravous Group. All rights reserved.</span>
+      <span>Abuja, FCT, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project photo">
+  <div class="lb-inner">
+    <div class="ph" id="lb-ph"><img id="lb-img" alt=""></div>
+    <div class="lb-cap">
+      <div><b id="lb-t"></b><br><span id="lb-s"></span></div>
+      <div class="lb-ctrl">
+        <button id="lb-prev">Previous</button><button id="lb-next">Next</button><button id="lb-close">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // mark missing photos so the fallback shows
+  function guard(img){
+    var box = img.closest('.ph');
+    if(!box) return;
+    var fail = function(){ box.classList.add('missing'); };
+    var ok = function(){ box.classList.remove('missing'); };
+    if(img.complete && img.getAttribute('src')){ (img.naturalWidth ? ok : fail)(); }
+    img.addEventListener('error', fail);
+    img.addEventListener('load', ok);
+  }
+  document.querySelectorAll('.ph img').forEach(guard);
+
+  // hero entrance: the one orchestrated moment
+  var hero = document.querySelector('.hero');
+  requestAnimationFrame(function(){ setTimeout(function(){ hero.classList.add('ready'); }, 80); });
+
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // theme toggle: starts from the device setting; a visitor's choice is remembered
+  var root=document.documentElement, tbtn=document.getElementById('theme-btn');
+  var mq=matchMedia('(prefers-color-scheme: dark)');
+  function label(){ tbtn.setAttribute('aria-label', root.getAttribute('data-theme')==='dark'?'Switch to light mode':'Switch to dark mode'); }
+  function saved(){ try{ return localStorage.getItem('theme'); }catch(e){ return null; } }
+  label();
+  tbtn.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme')==='dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    var sys = mq.matches ? 'dark' : 'light';
+    try{ next===sys ? localStorage.removeItem('theme') : localStorage.setItem('theme', next); }catch(e){}
+    label();
+  });
+  mq.addEventListener && mq.addEventListener('change', function(e){
+    if(saved()) return;
+    root.setAttribute('data-theme', e.matches ? 'dark' : 'light'); label();
+  });
+
+  // mobile menu
+  var btn = document.querySelector('.menu-btn'), nav = document.getElementById('nav');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open); btn.textContent = open ? 'Close' : 'Menu';
+  });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){
+    nav.classList.remove('open'); btn.setAttribute('aria-expanded', false); btn.textContent = 'Menu';
+  });});
+
+  // project lightbox
+  var items = Array.prototype.slice.call(document.querySelectorAll('.proj'));
+  var lb = document.getElementById('lb'), lbImg = document.getElementById('lb-img'), lbPh = document.getElementById('lb-ph');
+  var cur = 0, last = null;
+  guard(lbImg);
+  function show(i){
+    cur = (i + items.length) % items.length;
+    var it = items[cur], src = it.querySelector('img');
+    lbPh.classList.remove('missing');
+    lbPh.setAttribute('data-file', it.querySelector('.ph').getAttribute('data-file'));
+    lbImg.src = src.getAttribute('data-full') || src.currentSrc || src.src;
+    document.getElementById('lb-t').textContent = it.querySelector('b').textContent;
+    lbImg.alt = src.alt;
+    document.getElementById('lb-s').textContent = it.querySelector('small').textContent;
+  }
+  function open(i){ last = document.activeElement; show(i); lb.classList.add('open'); document.getElementById('lb-close').focus(); }
+  function close(){ lb.classList.remove('open'); if(last) last.focus(); }
+  items.forEach(function(it, i){ it.addEventListener('click', function(){ open(i); }); });
+  document.getElementById('lb-prev').onclick = function(){ show(cur - 1); };
+  document.getElementById('lb-next').onclick = function(){ show(cur + 1); };
+  document.getElementById('lb-close').onclick = close;
+  lb.addEventListener('click', function(e){ if(e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key === 'Escape') close();
+    if(e.key === 'ArrowRight') show(cur + 1);
+    if(e.key === 'ArrowLeft') show(cur - 1);
+  });
+
+  // contact form
+  // Netlify (review site): Netlify Forms. Live server and Herd (.test): contact.php.
+  var form = document.getElementById('contact-form'), note = document.getElementById('form-note');
+  var sendBtn = form.querySelector('button[type="submit"]');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var host = location.hostname, endpoint = null;
+    if (/netlify\.app$/.test(host)) endpoint = '/';
+    else if (/(^|\.)stravousgroup\.com$/.test(host) || /\.test$/.test(host)) endpoint = 'contact.php';
+    if (!endpoint) { note.textContent = 'This is a preview. The form sends once the site is live.'; return; }
+
+    sendBtn.disabled = true; sendBtn.textContent = 'Sending…'; note.textContent = '';
+    fetch(endpoint, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded', 'Accept': 'application/json' },
+      body: new URLSearchParams(new FormData(form)).toString()
+    }).then(function(r){
+      if (!r.ok) throw new Error(r.status);
+      var type = r.headers.get('content-type') || '';
+      return type.indexOf('json') > -1 ? r.json() : { ok: true };
+    }).then(function(res){
+      if (!res.ok) throw new Error(res.error || 'failed');
+      form.reset();
+      note.textContent = 'Enquiry sent. Our team will get back to you.';
+    }).catch(function(){
+      note.textContent = 'Your enquiry did not send. Please try again, or email info@stravousgroup.com.';
+    }).then(function(){
+      sendBtn.disabled = false; sendBtn.textContent = 'Send enquiry';
+    });
+  });
+})();
+</script>
+</body>
+</html>

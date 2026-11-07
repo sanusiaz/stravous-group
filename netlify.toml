@@ -1,0 +1,35 @@
+# Netlify settings (review site only; the live server ignores this file)
+
+[build]
+  publish = "."
+
+# Keep the Netlify review copy out of Google so it doesn't compete with stravousgroup.com
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/site.webmanifest"
+  [headers.values]
+    Content-Type = "application/manifest+json"
+
+# Netlify can't run PHP, so don't serve the mail script there
+[[redirects]]
+  from = "/contact.php"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/tools/*"
+  to = "/"
+  status = 301
+  force = true

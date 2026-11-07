@@ -1,0 +1,14 @@
+{
+  "name": "Stravous Group",
+  "short_name": "Stravous",
+  "description": "Nigerian construction and real estate group, home to Stravous Construction and Stravous Real Estate.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0C1729",
+  "theme_color": "#0C1729",
+  "icons": [
+    { "src": "assets/brand/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/brand/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/brand/maskable-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
